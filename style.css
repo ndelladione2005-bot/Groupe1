@@ -1,0 +1,421 @@
+/* =========================
+RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+line-height:1.6;
+}
+
+/* =========================
+HEADER VIDEO
+========================= */
+
+header{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+header video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+z-index:1;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:1000;
+background:rgba(0,0,0,.85);
+}
+
+.navbar{
+display:flex;
+justify-content: right;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+padding:18px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.navbar a:hover{
+color: #c0392b;
+}
+
+.nav-reserve{
+background:#d4af37;
+color:#000 !important;
+padding:10px 20px;
+border-radius:30px;
+background-color: #c0392b;
+}
+
+.nav-reserve:hover{
+    color: #fff;
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+section{
+width:100%;
+}
+
+article{
+padding:80px 8%;
+}
+
+/* =========================
+TITRES
+========================= */
+
+.titre,
+.petite{
+text-align:center;
+margin-bottom:40px;
+}
+
+.titre-texte{
+font-size:2.5rem;
+font-weight:bold;
+}
+
+.titre-texte span{
+color:#c0392b;
+font-size:3rem;
+}
+
+/* =========================
+A PROPOS
+========================= */
+
+.row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.col50{
+flex:1;
+min-width:300px;
+}
+
+.col50 img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.features{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.feature{
+flex:1;
+min-width:180px;
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feature h3{
+color:#c0392b;
+margin-bottom:10px;
+}
+
+/* =========================
+MENU
+========================= */
+
+.Meunu{
+background:#fff;
+}
+
+.petit li{
+display:flex;
+justify-content:center;
+align-items: center;
+gap:20px;
+flex-wrap:wrap;
+list-style:none;
+margin-bottom:40px;
+}
+
+.petit a{
+text-decoration:none;
+background:#c0392b;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+}
+
+fieldset{
+border:2px solid #d4af37;
+border-radius:15px;
+padding:20px;
+margin-bottom:40px;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.card-container ul{
+list-style:none;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+text-align:center;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:30%;
+border:4px solid #c0392b;
+
+}
+
+
+.card-title{
+/* font-size: 2em; */
+color:#c0392b;
+text-align:center;
+margin:15px 0;
+}
+
+.card-description{
+padding:0 15px 20px;
+text-align:center;
+}
+
+.btn{
+    text-align: center;
+    background-color: #c0392b;
+    display: inline-block;
+    font-size: 0.9em; 
+    padding: 8px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid  #c0392b;
+    transition: background .30s;
+}
+
+
+/* =========================
+EQUIPE
+========================= */
+
+.carousel{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+list-style:none;
+}
+
+.card2{
+background:white;
+text-align:center;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+} 
+
+.card2:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+
+.card2 img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:20%;
+border:4px solid #c0392b;
+}
+
+.card2 h3{
+margin-top:15px;
+}
+
+/* =========================
+TEMOIGNAGES
+========================= */
+
+.containe{
+max-width:1000px;
+margin:auto;
+}
+
+.item{
+background:white;
+text-align:center;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.user-image{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.message-btn{
+border:none;
+background:#c0392b;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* =========================
+RESERVATION
+========================= */
+
+.reservation{
+background:white;
+}
+
+.reservation h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.reservation form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.reservation input,
+.reservation button{
+padding:15px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+.reservation button{
+background:#c0392b;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* =========================
+CONTACT
+========================= */
+
+.contact{
+background:#111;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:25px;
+}
+
+.contact-content p{
+margin-bottom:10px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+```
+.navbar{
+    flex-direction:column;
+}
+
+.titre-texte{
+    font-size:2rem;
+}
+
+.row{
+    flex-direction:column;
+}
+
+.card img{
+    height:180px;
+}
+
+.card2 img{
+    width:140px;
+    height:140px;
+}
+}
